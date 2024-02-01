@@ -1,0 +1,632 @@
+[[package]]
+name = "contourpy"
+version = "1.0.7"
+description = "Python library for calculating contours of 2D quadrilateral grids"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+numpy = ">=1.16"
+
+[package.extras]
+bokeh = ["bokeh", "chromedriver", "selenium"]
+docs = ["furo", "sphinx-copybutton"]
+mypy = ["contourpy", "docutils-stubs", "mypy (==0.991)", "types-pillow"]
+test = ["matplotlib", "pillow", "pytest"]
+test-no-images = ["pytest"]
+
+[[package]]
+name = "cycler"
+version = "0.11.0"
+description = "Composable style cycles"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "dearpygui"
+version = "1.6.2"
+description = "DearPyGui: A simple Python GUI Toolkit"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "debugpy"
+version = "1.6.3"
+description = "An implementation of the Debug Adapter Protocol for Python"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "docstring-to-markdown"
+version = "0.12"
+description = "On the fly conversion of Python docstrings to markdown"
+category = "dev"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "easyprocess"
+version = "1.1"
+description = "Easy to use Python subprocess interface."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "entrypoint2"
+version = "1.1"
+description = "easy to use command-line interface for python modules"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "fonttools"
+version = "4.39.3"
+description = "Tools to manipulate font files"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.extras]
+all = ["fs (>=2.2.0,<3)", "lxml (>=4.0,<5)", "zopfli (>=0.1.4)", "lz4 (>=1.7.4.2)", "matplotlib", "sympy", "skia-pathops (>=0.5.0)", "uharfbuzz (>=0.23.0)", "brotlicffi (>=0.8.0)", "scipy", "brotli (>=1.0.1)", "munkres", "unicodedata2 (>=15.0.0)", "xattr"]
+graphite = ["lz4 (>=1.7.4.2)"]
+interpolatable = ["scipy", "munkres"]
+lxml = ["lxml (>=4.0,<5)"]
+pathops = ["skia-pathops (>=0.5.0)"]
+plot = ["matplotlib"]
+repacker = ["uharfbuzz (>=0.23.0)"]
+symfont = ["sympy"]
+type1 = ["xattr"]
+ufo = ["fs (>=2.2.0,<3)"]
+unicode = ["unicodedata2 (>=15.0.0)"]
+woff = ["zopfli (>=0.1.4)", "brotlicffi (>=0.8.0)", "brotli (>=1.0.1)"]
+
+[[package]]
+name = "importlib-resources"
+version = "5.12.0"
+description = "Read resources from Python packages"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+zipp = {version = ">=3.1.0", markers = "python_version < \"3.10\""}
+
+[package.extras]
+docs = ["sphinx (>=3.5)", "jaraco.packaging (>=9)", "rst.linker (>=1.9)", "furo", "sphinx-lint", "jaraco.tidelift (>=1.4)"]
+testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "flake8 (<5)", "pytest-cov", "pytest-enabler (>=1.3)", "pytest-black (>=0.3.7)", "pytest-mypy (>=0.9.1)", "pytest-flake8"]
+
+[[package]]
+name = "jedi"
+version = "0.18.1"
+description = "An autocompletion tool for Python that can be used for text editors."
+category = "dev"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+parso = ">=0.8.0,<0.9.0"
+
+[package.extras]
+qa = ["flake8 (==3.8.3)", "mypy (==0.782)"]
+testing = ["Django (<3.1)", "colorama", "docopt", "pytest (<7.0.0)"]
+
+[[package]]
+name = "jeepney"
+version = "0.8.0"
+description = "Low-level, pure Python DBus protocol wrapper."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+test = ["pytest", "pytest-trio", "pytest-asyncio (>=0.17)", "testpath", "trio", "async-timeout"]
+trio = ["trio", "async-generator"]
+
+[[package]]
+name = "kiwisolver"
+version = "1.4.4"
+description = "A fast implementation of the Cassowary constraint solver"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "matplotlib"
+version = "3.7.1"
+description = "Python plotting package"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+contourpy = ">=1.0.1"
+cycler = ">=0.10"
+fonttools = ">=4.22.0"
+importlib-resources = {version = ">=3.2.0", markers = "python_version < \"3.10\""}
+kiwisolver = ">=1.0.1"
+numpy = ">=1.20"
+packaging = ">=20.0"
+pillow = ">=6.2.0"
+pyparsing = ">=2.3.1"
+python-dateutil = ">=2.7"
+
+[[package]]
+name = "mouseinfo"
+version = "0.1.3"
+description = "An application to display XY position and RGB color information for the pixel currently under the mouse. Works on Python 2 and 3."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pyperclip = "*"
+python3-Xlib = {version = "*", markers = "platform_system == \"Linux\" and python_version >= \"3.0\""}
+rubicon-objc = {version = "*", markers = "platform_system == \"Darwin\""}
+
+[[package]]
+name = "mss"
+version = "9.0.1"
+description = "An ultra fast cross-platform multiple screenshots module in pure python using ctypes."
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "numpy"
+version = "1.24.3"
+description = "Fundamental package for array computing in Python"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[[package]]
+name = "packaging"
+version = "21.3"
+description = "Core utilities for Python packages"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+pyparsing = ">=2.0.2,<3.0.5 || >3.0.5"
+
+[[package]]
+name = "parso"
+version = "0.8.3"
+description = "A Python Parser"
+category = "dev"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+qa = ["flake8 (==3.8.3)", "mypy (==0.782)"]
+testing = ["docopt", "pytest (<6.0.0)"]
+
+[[package]]
+name = "pillow"
+version = "9.5.0"
+description = "Python Imaging Library (Fork)"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+docs = ["furo", "olefile", "sphinx (>=2.4)", "sphinx-copybutton", "sphinx-inline-tabs", "sphinx-removed-in", "sphinxext-opengraph"]
+tests = ["check-manifest", "coverage", "defusedxml", "markdown2", "olefile", "packaging", "pyroma", "pytest", "pytest-cov", "pytest-timeout"]
+
+[[package]]
+name = "pluggy"
+version = "1.0.0"
+description = "plugin and hook calling mechanisms for python"
+category = "dev"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+dev = ["pre-commit", "tox"]
+testing = ["pytest", "pytest-benchmark"]
+
+[[package]]
+name = "projectile"
+version = "0.0.6"
+description = "A tile-on-demand tile server built with PIL and Tornado"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+matplotlib = ">=2.1.1"
+numpy = ">=1.13.3"
+Pillow = ">=4.3.0"
+six = ">=1.11.0"
+tornado = ">=4.5.2"
+
+[[package]]
+name = "pyautogui"
+version = "0.9.54"
+description = "PyAutoGUI lets Python control the mouse and keyboard, and other GUI automation tasks. For Windows, macOS, and Linux, on Python 3 and 2."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+mouseinfo = "*"
+pygetwindow = ">=0.0.5"
+pymsgbox = "*"
+pyobjc-core = {version = "*", markers = "platform_system == \"Darwin\""}
+pyobjc-framework-quartz = {version = "*", markers = "platform_system == \"Darwin\""}
+pyscreeze = ">=0.1.21"
+python3-Xlib = {version = "*", markers = "platform_system == \"Linux\" and python_version >= \"3.0\""}
+pytweening = ">=1.0.4"
+
+[[package]]
+name = "pyflakes"
+version = "3.0.1"
+description = "passive checker of Python programs"
+category = "dev"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "pygame"
+version = "2.1.2"
+description = "Python Game Development"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "pygetwindow"
+version = "0.0.9"
+description = "A simple, cross-platform module for obtaining GUI information on application's windows."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pyrect = "*"
+
+[[package]]
+name = "pymsgbox"
+version = "1.0.9"
+description = "A simple, cross-platform, pure Python module for JavaScript-like message boxes."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "pyobjc-core"
+version = "9.1.1"
+description = "Python<->ObjC Interoperability Module"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "pyobjc-framework-cocoa"
+version = "9.1.1"
+description = "Wrappers for the Cocoa frameworks on macOS"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+pyobjc-core = ">=9.1.1"
+
+[[package]]
+name = "pyobjc-framework-quartz"
+version = "9.1.1"
+description = "Wrappers for the Quartz frameworks on macOS"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+pyobjc-core = ">=9.1.1"
+pyobjc-framework-Cocoa = ">=9.1.1"
+
+[[package]]
+name = "pyparsing"
+version = "3.0.9"
+description = "pyparsing module - Classes and methods to define and execute parsing grammars"
+category = "main"
+optional = false
+python-versions = ">=3.6.8"
+
+[package.extras]
+diagrams = ["railroad-diagrams", "jinja2"]
+
+[[package]]
+name = "pyperclip"
+version = "1.8.2"
+description = "A cross-platform clipboard module for Python. (Only handles plain text for now.)"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "pyrect"
+version = "0.2.0"
+description = "PyRect is a simple module with a Rect class for Pygame-like rectangular areas."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "pyscreenshot"
+version = "3.1"
+description = "python screenshot"
+category = "main"
+optional = false
+python-versions = ">=3.4"
+
+[package.dependencies]
+EasyProcess = "*"
+entrypoint2 = "*"
+jeepney = {version = "*", markers = "python_version > \"3.4\" and platform_system == \"Linux\""}
+mss = {version = "*", markers = "python_version > \"3.4\""}
+
+[[package]]
+name = "pyscreeze"
+version = "0.1.29"
+description = "A simple, cross-platform screenshot module for Python 2 and 3."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+Pillow = {version = ">=9.2.0", markers = "python_version == \"3.8\""}
+pyscreenshot = "*"
+
+[[package]]
+name = "python-dateutil"
+version = "2.8.2"
+description = "Extensions to the standard Python datetime module"
+category = "main"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
+
+[package.dependencies]
+six = ">=1.5"
+
+[[package]]
+name = "python-lsp-jsonrpc"
+version = "1.0.0"
+description = "JSON RPC 2.0 server library"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+ujson = ">=3.0.0"
+
+[package.extras]
+test = ["pylint", "pycodestyle", "pyflakes", "pytest", "pytest-cov", "coverage"]
+
+[[package]]
+name = "python-lsp-server"
+version = "1.7.3"
+description = "Python Language Server for the Language Server Protocol"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+docstring-to-markdown = "*"
+jedi = ">=0.17.2,<0.19.0"
+pluggy = ">=1.0.0"
+pyflakes = {version = ">=2.5.0,<3.1.0", optional = true, markers = "extra == \"pyflakes\""}
+python-lsp-jsonrpc = ">=1.0.0"
+rope = {version = ">1.2.0", optional = true, markers = "extra == \"rope\""}
+ujson = ">=3.0.0"
+whatthepatch = {version = ">=1.0.2,<2.0.0", optional = true, markers = "extra == \"yapf\""}
+yapf = {version = ">=0.33.0", optional = true, markers = "extra == \"yapf\""}
+
+[package.extras]
+all = ["autopep8 (>=1.6.0,<2.1.0)", "flake8 (>=5.0.0,<7)", "mccabe (>=0.7.0,<0.8.0)", "pycodestyle (>=2.9.0,<2.11.0)", "pydocstyle (>=6.3.0,<6.4.0)", "pyflakes (>=2.5.0,<3.1.0)", "pylint (>=2.5.0,<3)", "rope (>1.2.0)", "yapf (>=0.33.0)", "whatthepatch (>=1.0.2,<2.0.0)"]
+autopep8 = ["autopep8 (>=1.6.0,<2.1.0)"]
+flake8 = ["flake8 (>=5.0.0,<7)"]
+mccabe = ["mccabe (>=0.7.0,<0.8.0)"]
+pycodestyle = ["pycodestyle (>=2.9.0,<2.11.0)"]
+pydocstyle = ["pydocstyle (>=6.3.0,<6.4.0)"]
+pyflakes = ["pyflakes (>=2.5.0,<3.1.0)"]
+pylint = ["pylint (>=2.5.0,<3)"]
+rope = ["rope (>1.2.0)"]
+test = ["pylint (>=2.5.0,<3)", "pytest", "pytest-cov", "coverage", "numpy", "pandas", "matplotlib", "pyqt5", "flaky"]
+websockets = ["websockets (>=10.3)"]
+yapf = ["yapf (>=0.33.0)", "whatthepatch (>=1.0.2,<2.0.0)"]
+
+[[package]]
+name = "python3-xlib"
+version = "0.15"
+description = "Python3 X Library"
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "pytoolconfig"
+version = "1.2.2"
+description = "Python tool configuration"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+packaging = ">=21.3"
+tomli = {version = ">=2.0", markers = "python_version < \"3.11\""}
+
+[package.extras]
+doc = ["tabulate (>=0.8.9)", "sphinx (>=4.5.0)"]
+gen_docs = ["sphinx (>=4.5.0)", "sphinx-autodoc-typehints (>=1.18.1)", "sphinx-rtd-theme (>=1.0.0)", "pytoolconfig"]
+global = ["appdirs (>=1.4.4)"]
+validation = ["pydantic (>=1.7.4)"]
+
+[[package]]
+name = "pytweening"
+version = "1.0.7"
+description = "A collection of tweening / easing functions."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "rope"
+version = "1.3.0"
+description = "a python refactoring library..."
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+pytoolconfig = ">=1.1.2"
+
+[package.extras]
+dev = ["pytest (>=7.0.1)", "pytest-timeout (>=2.1.0)", "build (>=0.7.0)"]
+doc = ["pytoolconfig", "sphinx (>=4.5.0)", "sphinx-autodoc-typehints (>=1.18.1)", "sphinx-rtd-theme (>=1.0.0)"]
+
+[[package]]
+name = "rubicon-objc"
+version = "0.4.6"
+description = "A bridge between an Objective C runtime environment and Python."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+dev = ["pytest (==7.3.0)", "pytest-tldr (==0.2.5)", "setuptools-scm[toml] (==7.1.0)", "tox (==4.4.11)", "pre-commit (==2.21.0)", "pre-commit (==3.2.2)"]
+docs = ["furo (==2023.3.27)", "pyenchant (==3.2.2)", "sphinx (==6.1.3)", "sphinx-tabs (==3.4.1)", "sphinx-autobuild (==2021.3.14)", "sphinxcontrib-spelling (==8.0.0)"]
+
+[[package]]
+name = "six"
+version = "1.16.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "toml"
+version = "0.10.2"
+description = "Python Library for Tom's Obvious, Minimal Language"
+category = "dev"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "tomli"
+version = "2.0.1"
+description = "A lil' TOML parser"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "tornado"
+version = "6.3.1"
+description = "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed."
+category = "main"
+optional = false
+python-versions = ">= 3.8"
+
+[[package]]
+name = "ujson"
+version = "5.4.0"
+description = "Ultra fast JSON encoder and decoder for Python"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
+name = "whatthepatch"
+version = "1.0.2"
+description = "A patch parsing and application library."
+category = "dev"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "yapf"
+version = "0.33.0"
+description = "A formatter for Python code."
+category = "dev"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+tomli = ">=2.0.1"
+
+[[package]]
+name = "zipp"
+version = "3.15.0"
+description = "Backport of pathlib-compatible object wrapper for zip files"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+docs = ["sphinx (>=3.5)", "jaraco.packaging (>=9)", "rst.linker (>=1.9)", "furo", "sphinx-lint", "jaraco.tidelift (>=1.4)"]
+testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "flake8 (<5)", "pytest-cov", "pytest-enabler (>=1.3)", "jaraco.itertools", "jaraco.functools", "more-itertools", "big-o", "pytest-black (>=0.3.7)", "pytest-mypy (>=0.9.1)", "pytest-flake8"]
+
+[metadata]
+lock-version = "1.1"
+python-versions = ">=3.8.0,<3.9"
+content-hash = "21afa5ca54d67bc40eb7a8fba43972a127453f568ef17484db034a104011f96a"
+
+[metadata.files]
+contourpy = []
+cycler = []
+dearpygui = []
+debugpy = []
+docstring-to-markdown = []
+easyprocess = []
+entrypoint2 = []
+fonttools = []
+importlib-resources = []
+jedi = []
+jeepney = []
+kiwisolver = []
+matplotlib = []
+mouseinfo = []
+mss = []
+numpy = []
+packaging = []
+parso = []
+pillow = []
+pluggy = []
+projectile = []
+pyautogui = []
+pyflakes = []
+pygame = []
+pygetwindow = []
+pymsgbox = []
+pyobjc-core = []
+pyobjc-framework-cocoa = []
+pyobjc-framework-quartz = []
+pyparsing = []
+pyperclip = []
+pyrect = []
+pyscreenshot = []
+pyscreeze = []
+python-dateutil = []
+python-lsp-jsonrpc = []
+python-lsp-server = []
+python3-xlib = []
+pytoolconfig = []
+pytweening = []
+rope = []
+rubicon-objc = []
+six = []
+toml = []
+tomli = []
+tornado = []
+ujson = []
+whatthepatch = []
+yapf = []
+zipp = []
